@@ -1,0 +1,65 @@
+body {
+  margin: 0; 
+font-family: "Segoe UI", sans-serif;
+background: #F5F7FA;
+}
+
+.contenedor-header{
+  background: #4A90E2;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;/* centra el texto horizontalmente */
+}
+
+#generar-paleta
+{
+  display: flex;
+  background-color: #4A90E2;
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px;
+  margin: 100px auto; /* centra horizontal */
+  border: none;
+  cursor: pointer;
+}
+
+.contenedor-colores {
+  display: flex;/* activa Flexbox → pone los hijos en fila (horizontal) */
+  justify-content: center;/* centra horizontal */
+  gap: 20px; /* espacio entre cada bloque de color */
+  margin-top: 100px;/* baja todo el contenedor 100px desde arriba */
+  flex-wrap: wrap; 
+  padding: 0 20px; /* espacio horizontal dentro del contenedor */
+}
+
+.color{
+  width: 100px;   /* tamaño fijo */
+  height: 100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animación suave */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra base */
+  cursor: pointer; /* se siente interactivo */
+}
+
+/* EFECTO */
+.color:hover {
+  transform: translateY(-8px); /* sube */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* sombra más fuerte */
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .color {
+    width: 45%; /* 2 por fila */
+  }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+  .color {
+    width: 100%; /* 1 por fila */
+  }
+}

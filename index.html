@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de paletas de colores</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+<body>
+
+<header class="contenedor-header">
+  <h1>Generador de paletas</h1>
+  </header>
+
+  <!-- Selector de tamaño -->
+  <section class="selector-tamano">
+    <p>Seleccionar tamaño de paleta:</p>
+
+    <label>
+      <input type="radio" name="tamano" value="6" checked>
+      6 colores
+    </label>
+
+    <label>
+      <input type="radio" name="tamano" value="8">
+      8 colores
+    </label>
+
+    <label>
+      <input type="radio" name="tamano" value="9">
+      9 colores
+    </label>
+  </section>
+
+<main class="contenedor-main">
+
+ <div class="contenedor-colores">
+ <div class="color"style="background-color:rgb(255, 0, 0)"></div>
+ <div class="color"style="background-color: rgb(0, 255, 0);"></div>
+ <div class="color"style="background-color: rgb(0, 0, 255);"></div>
+ <div class="color"style="background-color: rgb(255, 255, 0);"></div>
+ <div class="color"style="background-color: rgb(255, 0, 255);"></div>
+ <div class="color"style="background-color: rgb(0, 255, 255);"></div>
+ <div class="color"style="background-color: rgb(255, 255, 255);"></div>
+ <div class="color"style="background-color: rgb(0, 0, 0);"></div>
+ <div class="color"style="background-color: rgb(128, 128, 128);"></div>
+
+
+</div>
+<button id="generar-paleta">Generar paleta</button>
+</main>
+<script src="./js/index.js"></script>
+</body>
+</html>
+
