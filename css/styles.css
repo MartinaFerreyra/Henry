@@ -32,7 +32,7 @@ h1 {
   justify-content: center;/* centra horizontal */
   gap: 20px; /* espacio entre cada bloque de color */
   margin-top: 100px;/* baja todo el contenedor 100px desde arriba */
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* permite que los elementos bajen a otra fila si no entran */
   padding: 0 20px; /* espacio horizontal dentro del contenedor */
 }
 
